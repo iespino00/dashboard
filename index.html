@@ -6,10 +6,14 @@
     
     <script type="text/javascript">
         function lee_json() {
-            $.getJSON("datos.json", function(datos) {
-                alert("Titulo: " + datos["title"]);
+            $.getJSON("datos.json", function(datos) 
+              {
+              console.log("Titulo: " + datos["title"])
+               // alert("Titulo: " + datos["title"]);
              });
         }
+      
+      lee_json();
     </script>
     
     
