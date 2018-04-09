@@ -3,6 +3,16 @@
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="/control/jquery-1.7.2.min.js"></script>
+    
+    <script type="text/javascript">
+        function lee_json() {
+            $.getJSON("datos.json", function(datos) {
+                alert("Titulo: " + datos["title"]);
+             });
+        }
+    </script>
+    
+    
     <script type="text/javascript">
 
       // Load the Visualization API and the corechart package.
@@ -40,7 +50,7 @@
     </script>
   </head>
 
-  <body>
+  <body onload="lee_json();">
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
   </body>
