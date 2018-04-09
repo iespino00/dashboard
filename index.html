@@ -5,20 +5,19 @@
     <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
     
     <script type="text/javascript">
-        function lee_json() {
+
             $.getJSON("datos.json", function(datos) 
               {
               var title = datos["title"];
               console.log("Titulo: " + datos["title"]);
                // alert("Titulo: " + datos["title"]);
              });
-        }
+
       
-      lee_json();
-    </script>
+
+
     
-    
-    <script type="text/javascript">
+
   
       // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
